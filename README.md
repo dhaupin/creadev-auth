@@ -34,3 +34,4 @@ const user = await validateToken(token);
 ## License
 
 MIT
+trigger
