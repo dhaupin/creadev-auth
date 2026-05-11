@@ -7,17 +7,29 @@
 
 ## Install
 
-\`\`\`bash
+```bash
 npm install @creadev.org/auth
-\`\`\`
+```
 
 ## Usage
 
-\`\`\`typescript
-import { } from '@creadev.org/auth';
+```typescript
+import { Auth, createAuth, createSession, validateSession, validateToken } from '@creadev.org/auth';
 
-// ...
-\`\`\`
+const auth = createAuth();
+const token = await createSession('user-id');
+const isValid = await validateSession(token);
+const user = await validateToken(token);
+```
+
+## API
+
+| Function | Description |
+|----------|-------------|
+| `createAuth(options?)` | Create auth |
+| `createSession(userId)` | Create session |
+| `validateSession(token)` | Validate session |
+| `validateToken(token)` | Validate token |
 
 ## License
 
