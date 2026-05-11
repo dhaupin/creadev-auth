@@ -1,0 +1,19 @@
+{
+  "name": "@creadev.org/auth",
+  "version": "0.3.1",
+  "type": "module",
+  "description": "Auth - token, validation",
+  "keywords": ["auth", "token", "validation"],
+  "author": "dhaupin",
+  "repository": "https://github.com/dhaupin/creadev-auth",
+  "license": "MIT",
+  "publishConfig": {"access": "public"},
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {"types": "./dist/index.d.ts", "import": "./dist/index.js"}
+  },
+  "scripts": {"build": "tsc", "test": "vitest"},
+  "devDependencies": {"typescript": "^5.0.0", "vitest": "^1.6.1"},
+  "files": ["dist"]
+}
